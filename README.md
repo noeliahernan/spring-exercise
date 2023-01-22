@@ -1,5 +1,5 @@
 # spring-exercise
-Exercise spring
+Exercise spring: CRUDL of Rates (INSERT, UPDATE, DELETE, GET)
 
 Docker bbdd postgre local: file in folder docker in project
 
