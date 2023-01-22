@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+    postgresDemo:
+        image: postgres
+        restart: always
+        ports:
+        - "5432:5432"
+        environment:
+            - DATABASE_HOST=127.0.0.1
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=root
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: pgadminDemo
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+            PGADMIN_DEFAULT_PASSWORD: "admin"
+        ports:
+            - "80:80"
